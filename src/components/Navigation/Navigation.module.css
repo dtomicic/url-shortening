@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.containerMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerMobileRightIcon {
+    font-size: 30px;
+}
+
+.containerDesktop {
+    display: none
+}
+
+.mobileMenu {
+    position: absolute;
+    color: white;
+    background-color: hsl(257, 27%, 26%);
+    width: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -1000px; /* 80px when open */ 
+    padding: 30px;
+    gap: 15px;
+    transition: ease-in-out .3s;
+}
+
+.mobileMenuList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins';
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mobileMenuLine {
+    width: 100%;
+    opacity: 0.1;
+    margin: 20px 0;
+}
+
+.mobileMenuLogin {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mobileMenuButton {
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+}
+
+.active {
+    top: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+    .containerMobile {
+        display: none;
+    }
+
+    .containerDesktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .containerDesktopLeft {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    .containerDesktopLeftList {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .containerDesktopLeftListItem {
+        font-family: 'Poppins';
+        font-weight: 700;
+        opacity: 0.4;
+        transition: ease-in-out .3s;
+        font-size: 14px;
+    }
+
+    .containerDesktopLeftListItem:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .containerDesktopRight {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .containerDesktopRightItem {
+        font-family: 'Poppins';
+        font-weight: 700;
+        opacity: 0.4;
+        font-size: 14px;
+        transition: ease-in-out .3s;
+    }
+
+    .containerDesktopRightItem:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .containerDesktopRightButton {
+        background-color: hsl(180, 66%, 49%);
+        border: none;
+        border-radius: 100px;
+        padding: 7px 20px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 14px;
+        color: white;
+        transition: ease-in-out .3s;
+    }
+
+    .containerDesktopRightButton:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
