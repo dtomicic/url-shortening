@@ -63,6 +63,10 @@
 
 @media screen and (min-width: 1024px) {
     .container {
+        background: url('../../../public/images/bg-shorten-desktop.svg');
+        background-color: hsl(257, 27%, 26%);
+        padding: 40px 0;
+        background-size: cover;
         max-width: unset;
     }
 
@@ -79,11 +83,18 @@
     }
 
     .input {
-        padding: 12px;
+        padding: 15px;
     }
 
     .button {
         width: 20%;
+        padding: 14px;
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .form {
+        width: 90%;
     }
 }
