@@ -14,6 +14,27 @@
   align-items: center;
 }
 
+.boostLinks {
+  background: url("../public/images/bg-boost-mobile.svg") no-repeat;
+  background-color: hsl(257, 27%, 26%);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-family: "Poppins";
+}
+
+.footer {
+  background-color: hsl(260, 8%, 14%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
 @media screen and (min-width: 1024px) {
   .whiteBG {
     padding: 0 100px;
@@ -22,6 +43,18 @@
   .grayBG {
     padding: 0 100px;
   }
+
+  .boostLinks {
+    background: url('../public/images/bg-boost-desktop.svg') no-repeat;
+    background-color: hsl(257, 27%, 26%);
+    background-size: cover;
+    height: 35vh;
+  }
+
+  .footer {
+    padding: 0 100px;
+  }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -32,4 +65,9 @@
   .grayBG {
     padding: 0 200px;
   }
+
+  .footer {
+    padding: 0 100px;
+  }
+
 }
