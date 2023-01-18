@@ -43,6 +43,15 @@
   outline: none;
 }
 
+.error {
+  display: none;
+  color: hsl(0, 87%, 67%);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 10px;
+}
+
 .button {
   background-color: hsl(180, 66%, 49%);
   border: none;
@@ -61,6 +70,14 @@
     cursor: pointer;
 }
 
+.displayError {
+  display: block;
+}
+
+.displayErrorBorder {
+  border: 3px solid hsl(0, 87%, 67%);
+}
+
 @media screen and (min-width: 1024px) {
     .container {
         background: url('../../../public/images/bg-shorten-desktop.svg');
@@ -72,8 +89,7 @@
 
     .form {
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
         gap: 20px;
     }
 
@@ -84,6 +100,10 @@
 
     .input {
         padding: 15px;
+    }
+
+    .error {
+      font-size: 18px;
     }
 
     .button {

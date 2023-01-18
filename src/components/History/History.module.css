@@ -53,6 +53,15 @@
   opacity: 0.6;
 }
 
+.copiedBtn {
+  background-color: hsl(257, 27%, 26%);
+  transition: ease-in-out .3;
+}
+
+.copiedBtn:hover {
+  opacity: 1;
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
