@@ -2,6 +2,7 @@ import "./App.css";
 import Functional from "./components/Functional/Functional";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
+import Statistics from "./components/Statistics/Statistics";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </div>
       <div className="grayBG">
         <Functional />
+        <Statistics />
       </div>
     </>
   );
