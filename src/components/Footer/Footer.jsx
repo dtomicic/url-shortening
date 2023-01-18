@@ -38,7 +38,7 @@ const Footer = () => {
             </h3>
             <ul className={styles.containerSecondItemList}>
               {item.itemLinks.map((link) => (
-                <li className={styles.containerSecondItemListItem}>{link}</li>
+                <li className={styles.containerSecondItemListItem} key={link}>{link}</li>
               ))}
             </ul>
           </div>
